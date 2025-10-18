@@ -8,6 +8,7 @@ export default function Home() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    // sent the topic to the backend API
 
     try {
       const response = await fetch("http://127.0.0.1:8000/generate-content/", {
